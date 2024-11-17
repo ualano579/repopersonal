@@ -1,0 +1,184 @@
+#Quotes de Carmen Mola y frases célebres
+#Estructura del documento:
+
+#usuarioId dispositivoId <secuencia de palabras>
+
+Pepe dispositivo01 El sufrimiento humano es como un gas en una cámara vacía: se expande hasta ocupar todo el espacio disponible
+Pepa dispositivo02 No luchamos por nosotros, luchamos por el futuro. Por entregar a la siguiente generación un país mejor
+Pepe dispositivo01 Todos nos ponemos máscaras, inventamos personajes con los que protegernos
+Pepa dispositivo01 Es increíble lo poco que conocemos a la gente que tenemos más cerca
+Pepe dispositivo01 Ahora, ¿qué hago de mi vida sin ti? Tú no me enseñaste a olvidarte, solo me enseñaste a quererte
+
+Pepa dispositivo02 Algo tiene la sabiduría popular que simplifica los problemas y los muestra en su justa proporción
+Pepe dispositivo01 Como los pobres enamorados que recogen cualquier migaja para seguir alimentando su sentimiento
+Pepa dispositivo01 Pocos saben que por el ojo tuerto también se llora
+Pepe dispositivo01 Los primeros que llegaron cuando avisaron del hallazgo del cadáver, se han marchado sin discutir demasiado
+Pepe dispositivo01 Hay delitos para los que no existe más justicia que la muerte
+Pepa dispositivo01 El mundo está enfermo de violencia. Hay personas enganchadas a la violencia en cualquiera de sus formas. Y todavía nadie se ha preocupado de conseguir una cura.
+
+Pepe dispositivo01 Siempre llevamos ventaja sobre el asesino. Nosotros podemos equivocarnos veinte veces, pero si acertamos una, lo descubrimos; él puede acertar veinte veces, pero si falla una, lo descubrimos. Es una cuestión de estadística.
+Pepa dispositivo02 ¿para qué voy a ganar más dinero del que necesitamos, para ser los más ricos del cementerio?
+Pepa dispositivo01 las cosas es mantener los nervios dentro del estómago más tiempo del necesario.
+Pepe dispositivo01 Hay que tener amigos en todas partes y no pedirles un favor si no es completamente necesario: hacerlos sí, pedirlos no
+Pepe dispositivo01 Uno se pasa la vida despidiéndose, haciendo el luto de una época, de una persona, de una afición que ya no queremos seguir cultivando
+Juan dispositivo01 Hace mucho tiempo que dejé de juzgar a nadie;  nunca se sabe lo que está sintiendo el otro.
+Pepe dispositivo01 En cada caso, perdemos un trozo de alma. ¿Y si él ha perdido la suya? ¿Y si esa es la razón por la que de sus palabras no se desprende un atisbo de culpa o remordimientos? Nadie regresa indemne del infierno.
+Pepa dispositivo01 ¿Y si mañana (y subrayo el si) de repente te perdiera? Habría perdido el mundo entero, no solo a ti.
+Pepa dispositivo01 Madrid y este país serán un lugar mejor cuando nos demos cuenta de que la vida de un ropavejero o de una prostituta vale tanto como la del ministro de la reina
+Pepa dispositivo01 Como los pobres enamorados que recogen cualquier migaja para seguir alimentando su sentimiento,
+Pepa dispositivo02 A veces, la vida te guarda un regalo donde no imaginas. Yo también tengo miedo, pero tú misma me dijiste que era un hombre valiente. Acertaste: tal vez no sea de los que van al frente por una bandera, pero no me acobarda lo que nos pueda pasar. Ni siquiera quiero pensar en eso. Ahora mismo, sólo me importa volverte a ver
+Pepa dispositivo02 y no te voy a perder, no te voy a dejar para buscar nuevas aventura
+Pepa dispositivo02 Olvidaos de la puta corrección política, no seáis hipócritas, piensa que gritará a los asistentes a su funeral. Todos queremos venganza, porque hay delitos para los que no existe más justicia que la muerte
+Pepa dispositivo02 Quisiera que fuera amor, aquel amor verdadero, lo que siento y lo que me hace pensar en ti.
+Pepe dispositivo01 El cólera, la guerra carlista y ahora estos asesinatos... Es como si el fin del mundo hubiera empezado y fuera distinto a lo que habíamos pensado, ni carros de fuego ni ángeles. Sólo hombres, haciéndose daño los unos a los otro
+Pepa dispositivo02 Piensa en lo efímeros que son los momentos de placer en esta vida
+Pepa dispositivo02 Es como si el fin del mundo hubiera empezado y fuera distinto a lo que habíamos pensado, ni carros de fuego ni ángeles. Sólo hombres, haciéndose daño los unos a los otros
+Pepe dispositivo01 Las calles llenas, la gente alrededor de mí habla y ríe y no sabe nada de ti. Veo quién pasa, pero sé que la ciudad me parecerá vacía si tú no vuelves.
+Pepa dispositivo02 Quizá porque alguien me dijo hace siglos que no se debía volver a los lugares en los que has sido feliz
+Pepa dispositivo02 Esa conciencia de cómo se escapa la vida sin ser conscientes hasta que es demasiado tarde. Hasta que no hay oportunidad para las risas ni los besos
+Pepe dispositivo01 Te lo juro, nadie, ni siquiera el destino, nos puede separar
+Pepe dispositivo01 No digo que ya no parezcas tú, o que hayas cambiado. Eso no, tú eres el que siempre has sido
+Pepe dispositivo01 No te conozco, han sido tantos años engañándome que ya no sé qué es verdad y qué es mentira. Supongo que todo es mentira
+Pepa dispositivo02 hasta dónde llega la responsabilidad de una madre, en qué momentos hay que dejar a los hijos volar solos, sin la mirada vigilante y la tutela obsesiva. No hay tregua, ni descanso, se dice. A los hijos hay que cuidarlos todo el tiempo, incluso cuando no estás con ellos. Un hilo de plata debe mantener la comunicación, un hilo del que tirar si asoma el peligro, si se encienden las alarmas interiores. Si el hilo se rompe, el niño se pierde para siempre. Y no hay perdón para la madre que no supo estar al acecho.
+Pepe dispositivo01 Los recuerdos vienen y van a su antojo, nunca se sabe lo que florece en el camposanto de mi memoria
+Pepa dispositivo02 Los jóvenes os creéis que el mundo empezó con vosotros, pero el mundo existe desde antes de que nacierais
+Pepa dispositivo01 No deja de admirarme hasta qué extremos puede llegar la vanidad humana
+Pepa dispositivo02 Tal vez prefiere aferrarse al dolor en lugar de elegir las cosas que le podrían hacer feliz
+Juan dispositivo01 Cada momento es especial para quien tiene la visión de reconocerlo como tal
+Juan dispositivo01 La vida es muy peligrosa. No por las personas que hacen el mal, sino por las que se sientan a ver lo que pasa
+Juan dispositivo01 Asegúrate de que colocas tus pies en el lugar correcto y luego, mantente firme
+Pepe dispositivo01 La felicidad no brota de la razón, sino de la imaginación
+Juan dispositivo02 No se puede encontrar la paz evitando la vida
+Pepe dispositivo01 Lo que haces por ti se desvanece cuando mueres. Lo que haces por el resto conforma tu legado
+Pepe dispositivo01 Buenos amigos, buenos libros y tener una conciencia tranquila: esta es la vida ideal
+Pepe dispositivo01 Cuando las oportunidades no llamen a tu puerta, construye una
+Juan dispositivo01 La vida es un viaje de autodescubrimiento, atrévete a explorar
+Pepe dispositivo01 Al cabo de los años he observado que la belleza, como la felicidad, es frecuente. No pasa un día en que no estemos, un instante, en el paraíso
+Pepe dispositivo01 La risa es el Sol que ahuyenta el invierno del rostro humano
+Juan dispositivo02 La felicidad es amor, no otra cosa. El que sabe amar es feliz
+Juan dispositivo02 El futuro pertenece a quienes creen en la belleza de sus sueño
+Pepe dispositivo01 Un día sin reír es un día perdido
+Pepa dispositivo02 La vida es como el jazz... es mucho mejor si es improvisada
+Pepe dispositivo01 La vida es la constante sorpresa de saber que existo
+Pepe dispositivo01 Los sabios son los que buscan la sabiduría; los necios piensan haberla encontrado
+Juan dispositivo02 No lastimes a los demás con lo que te causa dolor a ti mismo
+Juan dispositivo01 Recuerda que la felicidad no depende de quién eres o qué tienes; depende únicamente de lo que piensas
+Pepe dispositivo01 Un hombre que no se alimenta de sus sueños envejece pronto
+Juana dispositivo01 El pesimista se queja del viento; el optimista espera que cambie; el realista ajusta las velas
+Juan dispositivo01 Cuando las cosas se ponen difíciles, lo duro es ponerse en march
+Juana dispositivo01					La vida no es justa, es apenas más justa que la muerte, eso es todo
+Pepe dispositivo01					Amar y sufrir es, a la larga, la única forma de vivir con plenitud y dignidad
+Pepe dispositivo01					La vida no es siempre una cuestión de tener buenas cartas, sino, a veces, de jugar bien una mala mano
+Juana dispositivo01					Es curioso que la vida, cuanto más vacía, más pesa
+Pepe dispositivo03					Me entenderás... cuando te duela el alma como a mí
+Juan dispositivo01					La vida no es sino una continua sucesión de oportunidades para sobrevivir
+Pepe dispositivo01					Si el hombre no ha descubierto nada por lo que morir, no es digno de vivir
+Pepe dispositivo01					La experiencia no es lo que te ocurre, es lo que haces con lo que te ocurre
+Juana dispositivo01					La vida no va de encontrarse a uno mismo, sino de crearse a uno mismo
+Pepa dispositivo01					En la vida hay algo peor que el fracaso: el no haber intentado nada
+Pepe dispositivo01					La peor lucha es la que no se hace
+Pepa dispositivo01					Perder el tiempo que disfruto no es tiempo perdido
+Pepa dispositivo01					Aquellos que no se mueven no notan sus cadenas
+Pepa dispositivo01					Deja de pensar en la vida y resuélvete a vivirla
+Pepe dispositivo01					No hay lugar donde ir salvo a cualquier parte, así que sigue caminando
+Pepa dispositivo01					Saber lo que hay que hacer elimina el miedo
+Pepa dispositivo01					Sólo aquellos que se arriesgan a caer pueden conseguir grandes cosas
+Pepa dispositivo01					El éxito no es el final, el fracaso no es fatal: es el coraje por seguir lo que cuenta
+Pepe dispositivo03					La vida es como una bicicleta: si quieres mantener el equilibrio, pedalea hacia delante
+Pepe dispositivo01					Convierte siempre una situación negativa en una positiva
+Juana dispositivo02					Aprendí que no se puede dar marcha atrás, que la esencia de la vida es ir hacia adelante
+Pepe dispositivo02					Un sólo pensamiento positivo por la mañana puede iluminar todo un día
+Pepe dispositivo01					Con el nuevo día llega nueva fuerza y nuevos pensamientos
+Juana dispositivo02					Todos tus sueños se harán realidad si tienes el coraje de perseguirlos
+Pepa dispositivo01					Deja marcado en tu corazón que cada día es el mejor día del año
+Pepa dispositivo01					Que no te avergüencen tus fracasos. Aprende de ellos y vuelve a empezar
+Pepa dispositivo02					Recuerda que sólo porque tocaste fondo, no significa que tengas que quedarte allí
+Juana dispositivo02					La única diferencia entre el éxito y el fracaso es la capacidad de actuar
+Juana dispositivo02					Si puedes cambiar tu mente, puedes cambiar el mundo
+Pepa dispositivo01					El fracaso es la oportunidad de comenzar de nuevo con más inteligencia
+Pepa dispositivo01					El sentido común no es resultado de la educación
+Juana dispositivo01					La educación es el arte de hacer visibles las cosas invisibles"
+Juana dispositivo01					No todos los lectores son líderes, pero todos los lectores se convierten en líderes
+Pepe dispositivo01					Quien se atreve a enseñar, nunca debe dejar de aprender
+Juana dispositivo02					Por la ignorancia nos equivocamos, y por las equivocaciones aprendemos
+Pepe dispositivo01					La educación es el vestido de gala para asistir a la fiesta de la vida
+Pepa dispositivo01					A menudo damos a los niños respuestas que recordar en lugar de problemas a resolver
+Juan dispositivo01					La mejor arma contra la ignorancia es el estudio
+Juan dispositivo01					La enseñanza que deja huella no es la que se hace de cabeza a cabeza, sino de corazón a corazón
+Juana dispositivo02					Educar la mente sin educar el corazón no es educación en absoluto
+Pepa dispositivo01					La educación es el único camino para escapar de la esclavitud mental
+Juana dispositivo01					Un niño con falta de educación es un niño perdido
+Juana dispositivo02					Un ser humano no alcanza sus cotas más altas hasta que está educado
+Pepa dispositivo02					La educación genera confianza. La confianza genera esperanza. La esperanza genera paz
+Juana dispositivo01					Antes de hablar, piensa; pero antes de pensar, lee
+Juana dispositivo01					La sabiduría no es producto de la escolarización, sino de un intento a lo largo de la vida de adquirirlo
+Juan dispositivo02					El estudio sin deseo estropea la memoria y no retiene nada de lo que toma
+Juana dispositivo01					La vida debe ser una incesante educación
+Juan dispositivo02					El conocimiento te dará la oportunidad de marcar una diferencia
+Juana dispositivo02					Toda vida es una constante educación
+Pepa dispositivo01					Las plantas las endereza el cultivo; a los hombres, la educación
+Juana dispositivo02					La clave de la educación no es enseñar, es despertar
+Pepa dispositivo01					La educación es el acto de despertar la curiosidad de la mente y alimentarla
+Juana dispositivo02					La educación es el cimiento sobre el cual construimos nuestro futuro
+Juana dispositivo01					La educación es el proceso en el que descubrimos que, aprendiendo, aprendemos a aprender
+Juan dispositivo02					La educación no es preparación para la vida; la educación es la vida en sí misma
+Juana dispositivo01					Pensar es fácil, actuar es difícil, y poner los pensamientos de uno mismo en acción es lo más difícil del mundo
+Juana dispositivo02					Debes de estar dispuesto a ser un principiante cada una de tus mañanas
+Pepa dispositivo01					Enseñar es aprender dos veces
+Juana dispositivo02					La educación es el arma más poderosa que puedes usar para cambiar el mundo
+Juana dispositivo02					Los niños tienen que ser enseñados sobre cómo pensar, no qué pensar
+Juan dispositivo02					Vivir sin filosofar es, propiamente, tener los ojos cerrados, sin tratar de abrirlos jamá
+Juan dispositivo02					Una inversión en conocimiento paga el mejor interés
+Juana dispositivo01					Siempre que enseñes, enseña a la vez a dudar de lo que enseñas
+Juana dispositivo01					El amor es el anhelo de salir de uno mismo
+Pepa dispositivo01					Las cartas de amor se empiezan sin saber lo que se va a decir y se terminan sin saber lo que se ha dicho
+Juana dispositivo02					Ven a dormir conmigo: no haremos el amor, él nos lo hará
+Juan dispositivo02					No amas a alguien porque sea perfecto, lo amas a pesar de que no lo sea
+Juana dispositivo02					Verás, hasta que te conocí, sólo había experimentado el deseo. El amor, nunca
+Juan dispositivo02					Te quiero no por quien eres, sino por quien soy cuando estoy contigo
+Juana dispositivo02					El amor no tiene cura, pero es la única cura para todos los males
+Pepa dispositivo02					Escoge una persona que te mire como si fueses magia
+Pepa dispositivo01					Temer al amor es temer a la vida, y los que temen a la vida ya están medio muertos
+Juana dispositivo02					Sabes que estás enamorado cuando no quieres acostarte porque la realidad es por fin mejor que tus sueños
+Pepa dispositivo01					Yo me enamoré de sus demonios. Ella, de mi oscuridad. Éramos el infierno perfecto
+Juana dispositivo02					El amor es el deseo de encontrar a la mitad perdida de nosotros mismos
+Pepa dispositivo01					La raíz de todas las pasiones es el amor. De él nace la tristeza, el gozo, la alegría y la desesperación
+Pepa dispositivo01					El amor es invisible y entra y sale por donde quiere sin que nadie le pida cuenta de sus hechos
+Pepa dispositivo01					Hay amores tan bellos que justifican todas las locuras que hacen cometer
+Juana dispositivo02					Ni la ausencia ni el tiempo son nada cuando se ama
+Pepa dispositivo01					El amor es como la música, la pintura, los libros... no se busca, se encuentra
+Juana dispositivo02					El amor de los jóvenes en verdad no está en su corazón, sino más bien en sus ojos
+Pepe dispositivo01					Hay besos que en los labios dejan huellas como un campo de sol entre dos hielos
+Juana dispositivo02					El amor es la alegría de los buenos, la reflexión de los sabios, el asombro de los incrédulos
+Pepa dispositivo01					Lo que se hace por amor está más allá del bien y del mal
+Juan dispositivo01					Si tuviera que volver a comenzar mi vida, intentaría encontrarte mucho antes
+Pepe dispositivo03					La vida es la flor de la que el amor es la miel
+Pepa dispositivo02					El amor es mejor maestro que el deber
+Juana dispositivo02					El amor, por no tener geografía, no conoce límites
+Pepe dispositivo02					El amor es una flor que debes dejar crecer
+Juan dispositivo02					El crimen del amor es el olvido
+Juana dispositivo02					Amamos porque esa es la única gran aventura
+Juan dispositivo01					El amor es la poesía de los sentidos
+Juana dispositivo01					Amar no es mirarse el uno al otro; es mirar juntos en la misma dirección
+Juan dispositivo01					El amor conquista todas las cosas. Démosle paso al amor
+Juana dispositivo02					La medida del amor es amar sin medida
+Pepa dispositivo02					Quiero llenar mi boca con tu nombre
+Juana dispositivo02					El amor intenso no mide, sino que simplemente da
+Juana dispositivo02				Si no tardas mucho, te espero toda la vida
+Pepa dispositivo01					Haz el amor y no la guerra
+Pepe dispositivo03					El amor verdadero es el que no atosiga, no aísla, no rechaza, no persigue, solamente acepta
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+	
