@@ -41,6 +41,50 @@ public class R {
 		if (aux2 == null) return;
 		
 	}
+//	public double distancia(String idOrigen, String idDestino) {
+//	    // Verificar si ambos nodos existen
+//	    if (!datos.containsKey(idOrigen) || !datos.containsKey(idDestino)) {
+//	        throw new IllegalArgumentException("Uno de los nodos no existe");
+//	    }
+//
+//	    // Inicializar estructuras
+//	    PriorityQueue<Entry<String, Double>> cola = new PriorityQueue<>(Map.Entry.comparingByValue());
+//	    Map<String, Double> distancias = new TreeMap<>();
+//	    Set<String> visitados = new HashSet<>();
+//
+//	    // Inicializar la distancia del nodo origen como 0 y el resto como infinito
+//	    for (String nodo : datos.keySet()) {
+//	        distancias.put(nodo, Double.POSITIVE_INFINITY);
+//	    }
+//	    distancias.put(idOrigen, 0.0);
+//	    cola.add(new AbstractMap.SimpleEntry<>(idOrigen, 0.0));
+//
+//	    // Algoritmo de Dijkstra
+//	    while (!cola.isEmpty()) {
+//	        Entry<String, Double> actual = cola.poll();
+//	        String nodoActual = actual.getKey();
+//	        double distanciaActual = actual.getValue();
+//
+//	        if (visitados.contains(nodoActual)) continue;
+//	        visitados.add(nodoActual);
+//
+//	        // Explorar vecinos del nodo actual
+//	        for (Map.Entry<String, Double> vecino : datos.get(nodoActual).entrySet()) {
+//	            String nodoVecino = vecino.getKey();
+//	            double pesoArista = vecino.getValue();
+//
+//	            // Relajación
+//	            if (distanciaActual + pesoArista < distancias.get(nodoVecino)) {
+//	                distancias.put(nodoVecino, distanciaActual + pesoArista);
+//	                cola.add(new AbstractMap.SimpleEntry<>(nodoVecino, distancias.get(nodoVecino)));
+//	            }
+//	        }
+//	    }
+//
+//	    // Retornar la distancia al nodo destino
+//	    return distancias.getOrDefault(idDestino, Double.POSITIVE_INFINITY);
+//	}
+
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
