@@ -4,28 +4,23 @@ import java.util.Map.Entry;
 import java.util.TreeMap;
 
 public class R {
-	TreeMap <String, TreeMap <String, Double>> datos;
+	static TreeMap <String, TreeMap <String, Double>> datos;
 	
-	public R(){
-		datos = new TreeMap<>();
-	}
-	
-	public boolean check (String id) {
-		int n = 0;
-		TreeMap<String, Double> aux = this.datos.get(id);
+	public static boolean check (String id) {
+		double n = 0;
+		TreeMap<String, Double> aux = datos.get(id);
 		if (aux == null) return false;
 		for (Double i : aux.values()) {
 			n += i;
 		}
-		System.out.println(n);
 		return n == 1;
 	}
 	
-	public void repare(String id) {
+	public static void repare(String id) {
 		if(check(id)) return;
-		TreeMap<String, Double> aux = this.datos.get(id);
+		TreeMap<String, Double> aux = datos.get(id);
 		if (aux == null) return;
-		int n = 0;
+		double n = 0;
 		for (Double i : aux.values()) {
 			n += i;
 		}
@@ -34,73 +29,54 @@ public class R {
 		}
 	}
 	
-	public void distancia(String idOrigen, String idDestino) {
-		TreeMap<String, Double> aux = this.datos.get(idOrigen);
-		if (aux == null) return;
-		TreeMap<String, Double> aux2 = this.datos.get(idDestino);
-		if (aux2 == null) return;
-		
-	}
-//	public double distancia(String idOrigen, String idDestino) {
-//	    // Verificar si ambos nodos existen
-//	    if (!datos.containsKey(idOrigen) || !datos.containsKey(idDestino)) {
-//	        throw new IllegalArgumentException("Uno de los nodos no existe");
-//	    }
-//
-//	    // Inicializar estructuras
-//	    PriorityQueue<Entry<String, Double>> cola = new PriorityQueue<>(Map.Entry.comparingByValue());
-//	    Map<String, Double> distancias = new TreeMap<>();
-//	    Set<String> visitados = new HashSet<>();
-//
-//	    // Inicializar la distancia del nodo origen como 0 y el resto como infinito
-//	    for (String nodo : datos.keySet()) {
-//	        distancias.put(nodo, Double.POSITIVE_INFINITY);
-//	    }
-//	    distancias.put(idOrigen, 0.0);
-//	    cola.add(new AbstractMap.SimpleEntry<>(idOrigen, 0.0));
-//
-//	    // Algoritmo de Dijkstra
-//	    while (!cola.isEmpty()) {
-//	        Entry<String, Double> actual = cola.poll();
-//	        String nodoActual = actual.getKey();
-//	        double distanciaActual = actual.getValue();
-//
-//	        if (visitados.contains(nodoActual)) continue;
-//	        visitados.add(nodoActual);
-//
-//	        // Explorar vecinos del nodo actual
-//	        for (Map.Entry<String, Double> vecino : datos.get(nodoActual).entrySet()) {
-//	            String nodoVecino = vecino.getKey();
-//	            double pesoArista = vecino.getValue();
-//
-//	            // Relajación
-//	            if (distanciaActual + pesoArista < distancias.get(nodoVecino)) {
-//	                distancias.put(nodoVecino, distanciaActual + pesoArista);
-//	                cola.add(new AbstractMap.SimpleEntry<>(nodoVecino, distancias.get(nodoVecino)));
-//	            }
-//	        }
-//	    }
-//
-//	    // Retornar la distancia al nodo destino
-//	    return distancias.getOrDefault(idDestino, Double.POSITIVE_INFINITY);
-//	}
+	public static double distancia(String idOrigen, String idDestino) {
+		TreeMap<String, Double> aux = datos.get(idOrigen);
+		if (aux == null) return 0;
+		TreeMap<String, Double> aux2 = datos.get(idDestino);
+		if (aux2 == null) return 0;
 
+        double suma = 0;
+        // Calcula la suma de las diferencias cuadradas entre todos los valores posibles.
+        for (Double i : aux.values()) {
+            for (Double i2 : aux2.values()) {
+                suma += Math.pow(i - i2, 2);
+            }
+        }
+        return Math.sqrt(suma); // Devuelve la raíz cuadrada de la suma.
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		R r = new R();
-		
-		TreeMap <String, Double> x1 = new TreeMap<>();
-		TreeMap <String, Double> x2 = new TreeMap<>();
-		TreeMap <String, Double> x3 = new TreeMap<>();
-		x1.put("atrib00", 0.08);
-		x1.put("atrib01", 0.1);
-		x1.put("atrib03", 0.28);
-		r.datos.put("id00", x1);
-		
-		System.out.println(r.datos);
-		System.out.println(r.check("id00"));
-		r.repare("id00");
-		System.out.println(r.datos);
+		// Inicialización del mapa principal
+        datos = new TreeMap<>();
+
+        // Creación de dos claves principales y asignación de mapas vacíos
+        datos.put("id00", new TreeMap<>());
+        datos.put("id01", new TreeMap<>());
+
+        // Asignación de atributos y valores a las claves
+        datos.get("id00").put("at00", 0.008);
+        datos.get("id00").put("at03", 0.04);
+        datos.get("id00").put("at08", 0.05);
+
+        datos.get("id01").put("at01", 0.03);
+        datos.get("id01").put("at03", 0.001);
+        datos.get("id01").put("at05", 0.09);
+        datos.get("id01").put("at07", 0.05);
+
+        // Verificación inicial de si las sumas de los valores son iguales a 1
+        System.out.println(check("id00")); // Resultado esperado: false
+        System.out.println(check("id01")); // Resultado esperado: false
+
+        // Reparación de las sumas para que sean iguales a 1
+        repare("id00");
+        repare("id01");
+
+        // Verificación posterior a la reparación
+        System.out.println(check("id00")); // Resultado esperado: true
+        System.out.println(check("id01")); // Resultado esperado: true
+
+        // Cálculo de la distancia entre los valores de dos claves
+        System.out.println(distancia("id00", "id01"));
 	}
 }
