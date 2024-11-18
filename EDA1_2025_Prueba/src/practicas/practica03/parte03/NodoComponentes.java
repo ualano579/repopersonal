@@ -20,7 +20,7 @@ public class NodoComponentes implements Comparable<NodoComponentes> {
 	@Override
 	public int hashCode() {
 		//1 línea
-		return this.componentes.hashCode();
+		return Objects.hashCode(componentes);
 	}
 
 	@Override

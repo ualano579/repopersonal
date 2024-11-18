@@ -5,16 +5,18 @@ import java.util.Map.Entry;
 
 import practicas.practica03.parte03.Componente;
 
-public class ColeccionNodos    {
+public class ColeccionNodos <T extends Comparable<T>>   {
 	
-	protected final HashMap<Nodo, HashSet<Nodo>> data;
+	protected final HashMap<Nodo<T>, HashSet<Nodo<T>>> data;
 
 	public ColeccionNodos(){
 		this.data = new HashMap<>();
 	}
 	
-	public void add(Nodo nodoOrigen, Nodo nodoDestino) {
-		//...
+	public void add(Nodo<T> nodoOrigen, Nodo<T> nodoDestino) { //Grafo
+		HashSet<Nodo<T>> aux = this.data.get(nodoOrigen);
+		if(aux == null) this.data.put(nodoOrigen, aux = new HashSet<>());
+		aux.add(nodoDestino);
 	}
 
 	public int size() {
@@ -25,17 +27,24 @@ public class ColeccionNodos    {
 		this.data.clear();
 	}
 	    
-	private TreeMap<Nodo, TreeSet<Nodo>> toOrderedCollection() {
-		TreeMap<Nodo, TreeSet<Nodo>> result = new TreeMap<>();
-		//...
+	private TreeMap<Nodo<T>, TreeSet<Nodo<T>>> toOrderedCollection() {
+		TreeMap<Nodo<T>, TreeSet<Nodo<T>>> result = new TreeMap<>();
+		for (Entry<Nodo<T>, HashSet<Nodo<T>>> par : this.data.entrySet()) {
+			result.put(par.getKey(), new TreeSet<>(par.getValue()));
+		}
 		return result;
 	}
 
 	@Override
 	public String toString() {
-		TreeMap<Nodo, TreeSet<Nodo>> aux = this.toOrderedCollection();
+		TreeMap<Nodo<T>, TreeSet<Nodo<T>>> aux = this.toOrderedCollection();
 		String result = "";
-		//...
+		for (Entry<Nodo<T>, TreeSet<Nodo<T>>> par : aux.entrySet()) {
+			result += par.getKey() + "\n";
+			for (Nodo<T> par2 : par.getValue()) {
+				result += "\t" + par2 + "\n";
+			}
+		}
 		return result;
 	}
 

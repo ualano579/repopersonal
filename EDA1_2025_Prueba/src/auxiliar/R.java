@@ -7,9 +7,9 @@ public class R {
 	static TreeMap <String, TreeMap <String, Double>> datos;
 	
 	public static boolean check (String id) {
-		double n = 0;
 		TreeMap<String, Double> aux = datos.get(id);
 		if (aux == null) return false;
+		double n = 0;
 		for (Double i : aux.values()) {
 			n += i;
 		}
@@ -46,7 +46,6 @@ public class R {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// Inicialización del mapa principal
         datos = new TreeMap<>();
 
