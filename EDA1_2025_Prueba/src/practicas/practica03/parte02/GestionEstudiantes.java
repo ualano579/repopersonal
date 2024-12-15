@@ -9,13 +9,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
 import practicas.auxiliar.Format;
 import practicas.practica02.parte01.Asignatura;
 
-public class GestionEstudiantes {
+public class GestionEstudiantes implements Iterable<Entry<Estudiante, TreeMap<Estudiante, Integer>>>{
 	private final String centroId;
 	private final TreeMap<String, Asignatura> asignaturasOfertadas = new TreeMap<>();//La diferencia entre hacerlo aqui o dentro del constructor es para q sea más eficiente a nivel de memoria cndo se busca
 	private final TreeMap<Estudiante, Estudiante> estudiantesMatriculados = new TreeMap<>();
@@ -231,5 +232,21 @@ public class GestionEstudiantes {
 	@Override
 	public String toString() {
 		return this.centroId;
+	}
+	
+	public Iterator<Entry<Estudiante, TreeMap<Estudiante, Integer>>> iterator() {
+		TreeMap<Estudiante, TreeMap<Estudiante, Integer>> aux = new TreeMap<>();
+		for (Entry<Estudiante, TreeMap<Asignatura, ArrayList<Double>>> par1 : this.datos.entrySet()) {
+			TreeMap<Estudiante, Integer> t = null;
+			for (Entry<Estudiante, TreeMap<Asignatura, ArrayList<Double>>> par2 : this.datos.entrySet()) {
+				if(par1.getKey().compareTo(par2.getKey())>= 0) continue;
+				Set<Asignatura> a = new TreeSet<>(par1.getValue().keySet());
+				a.retainAll(par2.getValue().keySet()); //Interseccion
+				if(a.size() == 0) continue;
+				if(t == null) aux.put(par1.getKey(), t = new TreeMap<>());
+				t.put(par2.getKey(), a.size());
+			}
+		}
+		return aux.entrySet().iterator();
 	}
 }

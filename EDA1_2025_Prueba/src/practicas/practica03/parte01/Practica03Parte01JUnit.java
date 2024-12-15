@@ -15,8 +15,8 @@ public class Practica03Parte01JUnit {
 //							   "main" + File.separator +
 //							   "java" + File.separator +
 							   "practicas" + File.separator +
-							   "practica03" + File.separator ;
-//							   "parte01" + File.separator;
+							   "practica03" + File.separator +
+							   "parte01" + File.separator;
 
 	@Test
 	@Order(0)

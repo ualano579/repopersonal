@@ -15,7 +15,7 @@ public class ColeccionNodos {
 		//1 get()
 		//1 put()
 		HashSet<NodoComponentes> aux = this.data.get(nodoOrigen);
-		if(aux == null) this.data.put(nodoDestino, aux = new HashSet<>());
+		if(aux == null) this.data.put(nodoOrigen, aux = new HashSet<>());
 		aux.add(nodoDestino);
 	}
 

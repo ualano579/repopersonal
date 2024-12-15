@@ -31,7 +31,6 @@ public class GestionUsuariosDispositivos {
 			//Llamamos al método this.add() 
 			//1 única línea
 			this.add(items[0], items[1], Arrays.copyOfRange(items, 2, items.length));
-			
 		}
 		scan.close();
 		return true;
@@ -45,17 +44,19 @@ public class GestionUsuariosDispositivos {
 		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
 		if(aux1 == null) this.datos.put(usuarioId, aux1 = new TreeMap<>());
 		TreeMap<String, Integer> aux2 = aux1.get(dispositivoId);
-		if(aux2 == null) aux1.put(dispositivoId, aux2 = new TreeMap<>());
+		if (aux2 == null) aux1.put(dispositivoId, aux2 = new TreeMap<>());
 		for (String p : palabras) {
 			if(Auxiliar.isStopWord(p)) continue;
 			p = Auxiliar.cleanWord(p);
 			Integer i = aux2.get(p);
-			aux2.put(p, i == null ? 1 : i+1);
+			aux2.put(p, i == null ? 1 : i + 1);
+			
 		}
+		
 	}
 
 	public int size() {
-		return this.datos.size();
+		return this.datos.size();//nº claves
 	}
 	
 	public void clear() {
@@ -85,10 +86,10 @@ public class GestionUsuariosDispositivos {
 		usuarioId = usuarioId.trim().toLowerCase();
 		//1 get()
 		//2 for()
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return 0;
 		int n = 0;
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
-		if(aux1 == null) return 0;
-		for (TreeMap<String, Integer> t : aux1.values()) {
+		for (TreeMap<String, Integer> t : aux.values()) {
 			for (Integer i : t.values()) {
 				n+=i;
 			}
@@ -101,12 +102,12 @@ public class GestionUsuariosDispositivos {
 		dispositivoId = dispositivoId.trim().toLowerCase();
 		//2 get()
 		//1 for()
-		int n = 0;
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return 0;
+		TreeMap<String, Integer> aux1 = aux.get(dispositivoId);
 		if(aux1 == null) return 0;
-		TreeMap<String, Integer>  aux2 = aux1.get(dispositivoId);
-		if(aux2 == null) return 0;
-		for (Integer i : aux2.values()) {
+		int n = 0;
+		for (Integer i : aux1.values()) {
 			n+=i;
 		}
 		return n;
@@ -117,13 +118,13 @@ public class GestionUsuariosDispositivos {
 		palabra = Auxiliar.cleanWord(palabra);
 		//2 get()
 		//1 for()
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return 0;
 		int n = 0;
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
-		if(aux1 == null) return 0;
-		for (TreeMap<String, Integer> t : aux1.values()) {
+		for (TreeMap<String, Integer> t : aux.values()) {
 			Integer i = t.get(palabra);
-			if(i == null) continue;
-			n+=i;
+			if (i == null) continue;
+			n += i;
 		}
 		return n;
 	}
@@ -133,12 +134,12 @@ public class GestionUsuariosDispositivos {
 		dispositivoId = dispositivoId.trim().toLowerCase();
 		palabra = Auxiliar.cleanWord(palabra);
 		//3 get()
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
-		if(aux1 == null) return 0;
-		TreeMap<String, Integer>  aux2 = aux1.get(dispositivoId);
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return 0;
+		TreeMap<String, Integer> aux2 = aux.get(dispositivoId);
 		if(aux2 == null) return 0;
-		Integer n = aux2.get(palabra);
-		return n == null ? 0 : n;
+		Integer i = aux2.get(palabra);
+		return i == null ? 0: i;
 	}
 	
 	public TreeSet<String> getPalabras(String usuarioId) {
@@ -146,10 +147,10 @@ public class GestionUsuariosDispositivos {
 		TreeSet<String> result = new TreeSet<>();
 		//1 get()
 		//1 único for()
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
-		if (aux1 == null) return result;
-		for (Entry<String, TreeMap<String, Integer>> t : aux1.entrySet()) {
-			result.addAll(t.getValue().keySet());
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return result;
+		for (TreeMap<String, Integer> t : aux.values()) {
+			result.addAll(t.keySet());
 		}
 		return result;
 	}
@@ -159,9 +160,9 @@ public class GestionUsuariosDispositivos {
 		dispositivoId = dispositivoId.trim().toLowerCase();
 		TreeSet<String> result = new TreeSet<>();
 		//2 get()
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
-		if (aux1 == null) return result;
-		TreeMap<String, Integer> aux2 = aux1.get(dispositivoId);
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return result;
+		TreeMap<String, Integer> aux2 = aux.get(dispositivoId);
 		if(aux2 == null) return result;
 		result.addAll(aux2.keySet());
 		return result;
@@ -172,14 +173,14 @@ public class GestionUsuariosDispositivos {
 		TreeMap<String, Integer> result = new TreeMap<>();
 		//2 for() entrySet() + values()
 		//2 get()
-		for (Entry<String, TreeMap<String, TreeMap<String, Integer>>> par : this.datos.entrySet()) {
+		for (Entry<String, TreeMap<String, TreeMap<String, Integer>>> entry : this.datos.entrySet()) {
 			int n = 0;
-			for (TreeMap<String, Integer> t2 : par.getValue().values()) {
-				Integer i = t2.get(palabra);
-				if(i == null) continue;
-				n+=i;
-				if(n!=0) result.put(par.getKey(), n);
+			for (TreeMap<String, Integer> t : entry.getValue().values()) {
+				//Se podria poner el 2 get aqui para preguntar q tienes para este usuario pero como el mismo usuario solo sale una vez no es necesario
+				Integer i = t.get(palabra);
+				if (i != null) n+=i;
 			}
+			if(n != 0) result.put(entry.getKey(), n);
 		}
 		return result.toString();
 	}
@@ -189,13 +190,13 @@ public class GestionUsuariosDispositivos {
 		TreeSet<String> result = new TreeSet<>();
 		//Una única pista: lo mismo interesa crear una estructura TreeMap<K,V> auxiliar
 		//this.datos --> auxiliar --> result
-		TreeMap<String, TreeMap<String, Integer>> aux1 = this.datos.get(usuarioId);
-		if(aux1 == null) return result;
-		TreeMap<String,Integer> auxiliar = new TreeMap<>();
-		for (TreeMap<String, Integer> t : aux1.values()) {
-			for (String p : t.keySet()) {
-				Integer i = auxiliar.get(p);
-				auxiliar.put(p, i == null ? 1 : i + 1);
+		TreeMap<String, TreeMap<String, Integer>> aux = this.datos.get(usuarioId);
+		if(aux == null) return result;
+		TreeMap<String, Integer> auxiliar = new TreeMap<>();
+		for (TreeMap<String, Integer> t : aux.values()) {
+			for (String s : t.keySet()) {
+				Integer i = auxiliar.get(s);
+				auxiliar.put(s, i == null ? 1 : i+1);
 			}
 		}
 		for (Entry<String, Integer> par : auxiliar.entrySet()) {
@@ -219,15 +220,16 @@ public class GestionUsuariosDispositivos {
 		 * 
 		 */
 		for (Entry<String, TreeMap<String, TreeMap<String, Integer>>> par1 : this.datos.entrySet()) {
-			aux+= par1.getKey()+":\n";
+			aux += par1.getKey()+":\n";
 			for (Entry<String, TreeMap<String, Integer>> par2 : par1.getValue().entrySet()) {
-				aux+= "\t"+par2.getKey()+":";
+				aux += "\t"+ par2.getKey() + ":";
 				for (Entry<String, Integer> par3 : par2.getValue().entrySet()) {
-					aux+= " "+par3.getKey()+" <"+par3.getValue()+">";
-					if(!par3.equals(par2.getValue().lastEntry())) aux+= " -";
+					aux += " "+par3.getKey() +" <"+ par3.getValue()+">";
+					if(!par3.equals(par2.getValue().lastEntry())) aux += " -";
 				}
-				aux+= "\n";
+				aux += "\n";
 			}
+			
 		}
 		return aux;
 	}

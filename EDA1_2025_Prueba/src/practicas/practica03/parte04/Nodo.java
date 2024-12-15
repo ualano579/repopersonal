@@ -7,7 +7,7 @@ public class Nodo <T extends Comparable<T>> implements Comparable<Nodo<T>>{
 	
 	private ArrayList<T> componentes;
 
-	@SafeVarargs //Preguntar al chatgpt pq se tiene q poner esto
+	@SafeVarargs //Preguntar pq se tiene q poner esto
 	public Nodo(T... componentes) {
 		this.componentes = new ArrayList<>();
 		//1 for()

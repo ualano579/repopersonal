@@ -1,0 +1,74 @@
+%Conjunto de datos de ejemplo
+
+@Type
+Not Directed
+
+%Especificacion de los vertices del grafo
+
+@Vertex
+
+Almeria
+Granada
+Cadiz
+
+%Es posible encontrar comentarios dentro de la seccion vertex
+
+Huelva
+Sevilla
+Jaen
+Murcia
+Caceres
+    Badajoz
+Albacete    
+Valencia
+Madrid
+Barcelona
+  Gerona
+Lerida
+Zaragoza
+Bilbao
+Oviedo
+    Valladolid
+Vigo
+Corunya
+
+%Especificacion de las relaciones
+
+@Edges
+
+Almeria Granada 		173
+Almeria Murcia 224
+Granada Murcia 278
+Granada Jaen 99
+Granada				 Sevilla 		256
+Cadiz 	Sevilla 	125
+
+Huelva Sevilla 92
+Huelva Badajoz 234
+Sevilla Jaen 242
+%
+
+Jaen Madrid 335
+%
+Murcia Albacete 150
+Murcia				 Valencia 241
+Caceres Badajoz 90
+Badajoz Madrid 403
+
+Albacete        Valencia 191
+Albacete Madrid 251
+Valencia Barcelona 349
+
+Madrid Zaragoza 325
+Madrid      Bilbao 395
+Madrid Valladolid 193
+Barcelona    Zaragoza 296
+Barcelona Gerona 100
+Gerona Lerida 222
+
+Zaragoza 	Bilbao 324
+Bilbao Valladolid 280
+Bilbao		 Oviedo 			304
+Valladolid    Vigo 356
+Valladolid Corunya 455
+Vigo                                   Corunya     171

@@ -1,5 +1,6 @@
 package practicas.practica03.parte02;
 
+import java.util.Objects;
 
 public class Estudiante implements Comparable<Estudiante>{
     private final String apellido;
@@ -41,6 +42,15 @@ public class Estudiante implements Comparable<Estudiante>{
     public int compareTo(Estudiante other) {
         int cmp = this.apellido.compareTo(other.apellido);
         return cmp != 0 ? cmp : this.nombre.compareTo(other.nombre);
+    }
+    
+    public int hashCode() {
+    	return Objects.hash(apellido, nombre);
+    }
+    
+    public boolean equals (Object obj) {
+    	Estudiante otro = (Estudiante) obj;
+    	return this.apellido.equals(otro.apellido) && this.nombre.equals(otro.nombre);
     }
    
 }
