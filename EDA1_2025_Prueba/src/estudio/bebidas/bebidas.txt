@@ -1,0 +1,22 @@
+Ron;Barcelo;35
+Ron;Negrita;38
+Whisky;J&B;40
+Whisky;DyC;39
+Ginebra;Beefeater;38
+Ginebra;Sheriton;36
+Ron;Palido Montero;40
+Ron;Santa Teresa;39
+Ron;Flor de caña;41
+Ron;Cacique;37
+Cerveza;Budweiser;12
+Cerveza;Baladin;40
+Cerveza;Brewdog;41
+Cerveza;Koelschip;45
+Cerveza;Snake Venom;67
+Cerveza;Armageddon;65
+Tequila;Sierra Silver;75
+Ron;Bacardi;75
+Absenta;Hapsburg Gold;90
+Vodka;Spirytus;96
+Vodka;Absolut;40
+Vodka;Smirnoff;39
