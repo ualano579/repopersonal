@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class BebidaGraduacionTestJUnit {
 	String dir=System.getProperty("user.dir")+File.separator+"src"+File.separator+
-			"pruebas"+File.separator+"bebidas"+File.separator;
+			"estudio"+File.separator+"bebidas"+File.separator;
 	String archivo;
 	BebidaGraduacion bg;
 

@@ -51,53 +51,112 @@ public class BebidaGraduacion {
 	public void addBebida(String tipo, String nombre, double graduacion){
 		//TODO Agrega una bebida con nombre y graduacion, atendiendo a su tipo
 		//Este método es utilizado en el método "cargarDatos"
+		TreeMap<String, Double> aux = tm.get(tipo);
+		if(aux == null) tm.put(tipo, aux = new TreeMap<>());
+		aux.put(nombre, graduacion);
 	}
 	
 	public String listarBebidasPorTipo(){
 		//TODO Proporciona un listado de bebidas (tipo - nombre (graduacion))
 		//Ordenado por tipo de bebida
-		return null;
+		String result = "";
+		for (Entry<String, TreeMap<String, Double>> par : tm.entrySet()) {
+			for (Entry<String, Double> par2 : par.getValue().entrySet()) {
+				result += par.getKey() + " - " + par2.getKey() + " (" + par2.getValue() + "º)\n";
+			}
+		}
+		return result;
 	}
 	
 	public String listarBebidasConGraduacionSuperiorIgualA(double graduacion){
 		//TODO Proporciona un listado de bebidas (tipo - nombre (graduacion)) con graduacion superior a la pasada por parametro
 		//Ordenado por tipo de bebida
-		return null;
+		String result = "";
+		for (Entry<String, TreeMap<String, Double>> par : tm.entrySet()) {
+			for (Entry<String, Double> par2 : par.getValue().entrySet()) {
+				if(par2.getValue() >= graduacion) result += par.getKey() + " - " + par2.getKey() + " (" + par2.getValue() + "º)\n";
+			}
+		}
+		return result;
 	}
 	
 	public String listarBebidasDeTipo(String tipo){
 		//TODO Proporciona un listado de bebidas (tipo - nombre (graduacion)) del tipo especificado por parametro
-		return null;
+		String result = "";
+		TreeMap<String, Double> aux = tm.get(tipo);
+		for (Entry<String, Double> par : aux.entrySet()) {
+			result += tipo + " - " + par.getKey() + " (" + par.getValue() + "º)\n";
+		}
+		return result;
 	}
 	
 	public int contarBebidasDeTipo(String tipo){
 		//TODO Cuenta las bebidas del tipo especificado por parámetro
-		return 0;
+		TreeMap<String, Double> aux = tm.get(tipo);
+		return aux == null ? 0 : aux.size();
 	}
 	
 	public int contarBebidasConGraduacionSuperiorA(double graduacion){
 		//TODO Cuenta las bebidas con graduacion superior a la especificada por parametro
-		return 0;
+		int result = 0;
+		for (Entry<String, TreeMap<String, Double>> par : tm.entrySet()) {
+			for (Entry<String, Double> par2 : par.getValue().entrySet()) {
+				if(par2.getValue() >= graduacion) result++;
+			}
+		}
+		return result;
 	}
+	
+//	public int contarBebidasConGraduacionSuperiorA(double graduacion){
+//		//TODO Cuenta las bebidas con graduacion superior a la especificada por parametro
+//		return listarBebidasConGraduacionSuperiorIgualA(graduacion).split("\n").length;
+//	}
 	
 	public String listadoBebidasPorGraduacion(){
 		//TODO Proporciona un listado de bebidas ordenado de forma ascendente segun su graduacion (tipo - nombre (graduacion))
-		return null;
+		TreeMap<Double, TreeSet<String>> aux = new TreeMap<>();
+		for (Entry<String, TreeMap<String, Double>> par : tm.entrySet()) {
+			for (Entry<String, Double> par2 : par.getValue().entrySet()) {
+				TreeSet<String> t = aux.get(par2.getValue());
+				if(t == null) aux.put(par2.getValue(), t = new TreeSet<>());
+				t.add(par.getKey() + " - " + par2.getKey() + " (" + par2.getValue() + "º)");
+			}
+		}
+		String result = "";
+		for (TreeSet<String> par : aux.values()) {
+			for (String s : par) {
+				result += s + "\n";
+			}
+		}
+		
+		return result;
 	}
 	
 	public String listarTiposDeBebida(){
 		//TODO Proporciona un listado de los tipos de bebida
-		return null;
+		return tm.keySet().toString().replace("[", "").replace("]", "");
 	}
 	
 	public String listarNombresDeBebida(){
 		//TODO Proporciona un listado de los nombres de las bebidas
-		return null;
+		TreeSet<String> result = new TreeSet<>();
+		for (TreeMap<String, Double> t : tm.values()) {
+			result.addAll(t.keySet());
+		}
+		return result.toString().replace("[", "").replace("]", "");
 	}
 	
 	public double mediaAlcohol(){
 		//TODO Calcula la media de alcohol total por botella
-		return 0;
+		int n = 0;
+		double suma = 0;
+		for (TreeMap<String, Double> t : tm.values()) {
+			for (Double d : t.values()) {
+				suma += d;
+				n++;
+			}
+		}
+		return suma/n;
 	}
 
 }

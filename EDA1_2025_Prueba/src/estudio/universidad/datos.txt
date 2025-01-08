@@ -1,0 +1,101 @@
+Universidad de Almeria
+94215615W;Luis;Iribarne;Perez;Informatica;1;Metodologia de la Programacion
+73031578T;Luis;Gomez;Rodriguez;Informatica;1;Fisica para Informatica
+37606876J;Juan;Perez;Lopez;Mecanica;4;Trabajo Fin de Grado
+54894803J;Alfonso;Trejo;Pozo;Informatica;1;Estadistica
+84248003S;Jordi;Bru;Escobar;Informatica;3;Ingenieria de Sistemas de Informacion
+70931519W;Guillermo;Gisbert;Carranza;Informatica;3;Desarrollo de Interfaces de Usuario
+94215615W;Luis;Iribarne;Perez;Informatica;4;Desarrollo Rapido de Aplicaciones
+70931519W;Guillermo;Gisbert;Carranza;Informatica;3;Multiprocesadores
+64646466K;Iribarne;Perez;Roberto;Informatica;4;Procesos de Ingenieria del Software 2
+37606876J;Juan;Perez;Lopez;Informatica;4;Practicas Externas en Empresa 1
+94215615W;Luis;Iribarne;Perez;Informatica;4;Seguridad TIC
+94215615W;Luis;Iribarne;Perez;Informatica;3;Integracion de las Tecnologias de la Informacion en las Organizaciones
+56764319C;Enrique;Mata;Galan;Informatica;1;Introduccion a la Programacion
+88392554N;Silvia;Sanchez;Comendador;Informatica;4;Tecnologias Multimedia
+56764319C;Enrique;Mata;Galan;Informatica;3;Multiprocesadores
+94215615W;Luis;Iribarne;Perez;Informatica;3;Transmision de Datos y Redes de Computadores
+54894803J;Alfonso;Trejo;Pozo;Informatica;4;Desarrollo de Soluciones TIC
+94215615W;Luis;Iribarne;Perez;Informatica;4;Gestion de Datos en Sistemas de Informacion Web
+54894803J;Alfonso;Trejo;Pozo;Informatica;3;Informatica Industrial y Robotica
+94215615W;Luis;Iribarne;Perez;Informatica;4;Fundamentos de los Sistemas Inteligentes
+84248003S;Jordi;Bru;Escobar;Informatica;4;Trabajo Fin de Grado
+94215615W;Luis;Iribarne;Perez;Mecanica;2;Termotecnia
+84248003S;Jordi;Bru;Escobar;Informatica;1;Estadistica
+54894803J;Alfonso;Trejo;Pozo;Mecanica;3;Diseño Asistido por Ordenador
+70931519W;Guillermo;Gisbert;Carranza;Informatica;3;Seguridad y Cumplimiento Normativo
+94215615W;Luis;Iribarne;Perez;Informatica;2;Bases de Datos
+64646466K;Iribarne;Perez;Roberto;Informatica;4;Auditoria y Control Normativo en los Sistemas de Informacion
+70931519W;Guillermo;Gisbert;Carranza;Informatica;1;Algebra Lineal y Matematica Discreta
+54894803J;Alfonso;Trejo;Pozo;Informatica;3;Integracion de las Tecnologias de la Informacion en las Organizaciones
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Fundamentos de los Sistemas Inteligentes
+94215615W;Luis;Iribarne;Perez;Informatica;2;Estructura de Datos y Algoritmos I
+48654797E;Francisco;Lorente;Estevez;Informatica;3;Informatica Industrial y Robotica
+88392554N;Silvia;Sanchez;Comendador;Informatica;3;Administracion de Bases de Datos
+37606876J;Juan;Perez;Lopez;ADE;3;Economia Mundial
+64646466K;Iribarne;Perez;Roberto;Informatica;4;Inteligencia del Negocio
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Normativa y Regulacion Informatica
+37606876J;Juan;Perez;Lopez;Informatica;1;Metodologia de la Programacion
+37606876J;Juan;Perez;Lopez;Informatica;2;Planificacion y Gestion de Proyectos Informaticos
+54894803J;Alfonso;Trejo;Pozo;Informatica;4;Seguridad TIC
+56764319C;Enrique;Mata;Galan;Informatica;4;Gestion de Datos en Sistemas de Informacion Web
+73031578T;Luis;Gomez;Rodriguez;Informatica;2;Estructura de Datos y Algoritmos II
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Trabajo Fin de Grado
+73031578T;Luis;Gomez;Rodriguez;Informatica;3;Modelado y Diseño del Software 2
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Auditoria y Control Normativo en los Sistemas de Informacion
+56764319C;Enrique;Mata;Galan;Informatica;1;Estructura y Tecnologia de Computadores
+56764319C;Enrique;Mata;Galan;Informatica;3;Multiprocesadores
+48654797E;Francisco;Lorente;Estevez;Mecanica;2;Termotecnia
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Administracion de Sistemas TIC
+73031578T;Luis;Gomez;Rodriguez;Informatica;3;Negocio Electronico
+70931519W;Guillermo;Gisbert;Carranza;ADE;3;Economia Mundial
+64646466K;Iribarne;Perez;Roberto;Informatica;4;Principios de Evaluacion de Riesgos en los Sistemas de Informacion
+73031578T;Luis;Gomez;Rodriguez;Informatica;4;Fiabilidad y Gestion de Riesgos
+37606876J;Juan;Perez;Lopez;Informatica;3;Transmision de Datos y Redes de Computadores
+73031578T;Luis;Gomez;Rodriguez;Mecanica;1;Quimica
+37606876J;Juan;Perez;Lopez;Informatica;1;Introduccion a la Programacion
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Procesos de Ingenieria del Software 2
+70931519W;Guillermo;Gisbert;Carranza;Informatica;4;Programacion Distribuida y en Tiempo Real
+54894803J;Alfonso;Trejo;Pozo;Informatica;1;Fundamentos de Electronica
+88392554N;Silvia;Sanchez;Comendador;Informatica;4;Desarrollo de Soluciones en Ingenieria del Software
+56764319C;Enrique;Mata;Galan;ADE;1;Estadistica
+84248003S;Jordi;Bru;Escobar;Informatica;1;Calculo
+64646466K;Iribarne;Perez;Roberto;Informatica;3;Tratamiento Digital de Imagenes
+84248003S;Jordi;Bru;Escobar;ADE;2;Macroeconomia
+64646466K;Iribarne;Perez;Roberto;Informatica;2;Fundamentos de Redes de Computadores
+73031578T;Luis;Gomez;Rodriguez;Informatica;3;Tratamiento Digital de Imagenes
+64646466K;Iribarne;Perez;Roberto;Mecanica;4;Fabricacion Industrial
+84248003S;Jordi;Bru;Escobar;Informatica;3;Herramientas y Metodos de Ingenieria del Software
+84248003S;Jordi;Bru;Escobar;Informatica;3;Multiprocesadores
+70931519W;Guillermo;Gisbert;Carranza;Informatica;4;Analisis y Planificacion de las TI
+84248003S;Jordi;Bru;Escobar;Informatica;3;Perifericos e Interfaces
+88392554N;Silvia;Sanchez;Comendador;Informatica;4;Normativa y Regulacion Informatica
+84248003S;Jordi;Bru;Escobar;Informatica;3;Tratamiento Digital de Imagenes
+56764319C;Enrique;Mata;Galan;Informatica;1;Calculo
+73031578T;Luis;Gomez;Rodriguez;Informatica;3;Transmision de Datos y Redes de Computadores
+73031578T;Luis;Gomez;Rodriguez;Informatica;3;Tecnologias Web
+64646466K;Iribarne;Perez;Roberto;Informatica;4;Programacion Distribuida y en Tiempo Real
+56764319C;Enrique;Mata;Galan;Mecanica;1;Quimica
+54894803J;Alfonso;Trejo;Pozo;ADE;1;Estadistica
+56764319C;Enrique;Mata;Galan;Informatica;3;Tratamiento Digital de Imagenes
+56764319C;Enrique;Mata;Galan;ADE;3;Economia Mundial
+54894803J;Alfonso;Trejo;Pozo;Informatica;4;Seguridad TIC
+70931519W;Guillermo;Gisbert;Carranza;Informatica;3;Tecnologias Web
+48654797E;Francisco;Lorente;Estevez;ADE;1;Estadistica
+84248003S;Jordi;Bru;Escobar;Informatica;1;Calculo
+56764319C;Enrique;Mata;Galan;Informatica;4;Fundamentos de los Sistemas Inteligentes
+70931519W;Guillermo;Gisbert;Carranza;Informatica;2;Programacion de Servicios Software
+94215615W;Luis;Iribarne;Perez;ADE;1;Estadistica
+48654797E;Francisco;Lorente;Estevez;Informatica;4;Seguridad Informatica
+64646466K;Iribarne;Perez;Roberto;ADE;1;Estadistica
+88392554N;Silvia;Sanchez;Comendador;Mecanica;4;Trabajo Fin de Grado
+88392554N;Silvia;Sanchez;Comendador;Informatica;2;Fundamentos de Redes de Computadores
+84248003S;Jordi;Bru;Escobar;Informatica;1;Estadistica
+70931519W;Guillermo;Gisbert;Carranza;Informatica;3;Ingenieria de Requisitos
+48654797E;Francisco;Lorente;Estevez;Informatica;1;Organizacion y Gestion de Empresas
+56764319C;Enrique;Mata;Galan;Informatica;2;Bases de Datos
+54894803J;Alfonso;Trejo;Pozo;ADE;1;Estadistica
+37606876J;Juan;Perez;Lopez;Informatica;2;Bases de Datos
+84248003S;Jordi;Bru;Escobar;Informatica;2;Estructura de Datos y Algoritmos I
+84248003S;Jordi;Bru;Escobar;Informatica;4;Seguridad TIC
+88392554N;Silvia;Sanchez;Comendador;Informatica;2;Programacion de Servicios Software

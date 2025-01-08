@@ -349,7 +349,14 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 		String s = "";
 		//TODO: Igual que el método displayTree, pero si el nivel es igual al nivel especificado, 
 		//se debe mostrar un asterisco en lugar del valor del nodo.
-		//...
+		if (t != null) {
+			if (t.right != null) s += displayTreeAsterisk(t.right, level + 1, nivel);
+			for (int i = 0; i < level; i++) {
+				s += "     ";
+			}
+			s += "(" + (level == nivel ? "*" : t.nodeValue.toString())  + ")[" + level + "]\n";
+			if (t.left != null) s += displayTreeAsterisk(t.left, level + 1, nivel);
+		}
 		return s;
 	}
 	
@@ -378,8 +385,17 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 	private int pathHeightRecursive(BSTNode<T> nodo, T t, int nivel) {
 		//TODO: Implementar un método recursivo que devuelva la altura del camino 
 		// desde la raíz hasta el nodo con el valor t.
-		//...
-		return nivel;
+		if(nodo != null) {
+			int comparacion = (nodo.nodeValue).compareTo(t);
+			if(comparacion == 0) {
+				return nivel;
+			}else if(comparacion > 0) {
+				return pathHeightRecursive(nodo.left, t, nivel + 1);
+			}else {
+				return pathHeightRecursive(nodo.right, t, nivel + 1);
+			}
+		}
+		return -1;
 	}
 	
 	public String toStringLevel(int level) {
@@ -389,7 +405,11 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 	private String toStringLevel(BSTNode<T> t, int level) {
 		String s = "";
 		//TODO: Implementar un método que devuelva una cadena con los valores de los nodos en el nivel especificado.
-		//...
+		if(t== null || level < 0) return s;
+		
+		if(level == 0) return t.nodeValue + " ";
+		s += toStringLevel(t.left, level - 1);
+		s += toStringLevel(t.right, level - 1);
 		return s;
 	}
 	
@@ -399,8 +419,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int countNodes(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva la cantidad de nodos en el árbol.
-		//...
-		return //...
+		if(t == null) return 0;
+		if(t.left == null && t.right == null) return 1;
+		return countNodes(t.left) + countNodes(t.right) + 1;
 	}
 
 	public int countNodesOfLevel(int level) {
@@ -409,8 +430,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int countNodesOfLevel(BSTNode<T> t, int level) {
 		//TODO: Implementar un método que devuelva la cantidad de nodos en el nivel especificado.
-		//...
-		return //...
+		if(t == null) return 0;
+		if(level == 0) return 1;
+		return countNodesOfLevel(t.left, level - 1) + countNodesOfLevel(t.right, level - 1);
 	}
 	
 	public int height() {
@@ -419,8 +441,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int height(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva la altura del árbol.
-		//...
-		return //...
+		if(t == null) return -1;
+		//Si h= 0 --> 1 + Max(-1(t.left == null), -1(t.right))
+		return 1 + Math.max(height(t.left), height(t.right));
 	}
 	
 	public int numberOfLeaves() {
@@ -440,8 +463,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private BSTNode<T> findMin(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva el valor mínimo del árbol.
-		//...
-		return //...
+		if(t == null) return null;
+		if(t.left == null) return t;
+		return findMin(t.left);
 	}
 	
 	public T findMax() {
@@ -451,8 +475,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private BSTNode<T> findMax(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva el valor máximo del árbol.
-		//...
-		return //...
+		if(t == null) return null;
+		if(t.right == null) return t;
+		return findMax(t.right);
 	}
 	
 	public void removeLeaves() {
@@ -478,8 +503,16 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int findLevel(BSTNode<T> t, T x, int level) {
 		//TODO: Implementar un método que devuelva el nivel del nodo con el valor x. Si no está presente, debe devolver -1.
-		//...
-		return //...
+		if(t == null) return -1;
+		int cmp = t.nodeValue.compareTo(x);
+		if(cmp == 0) {
+			return level;
+		}else if (cmp < 0) {
+			return findLevel(t.right, x, level + 1);
+		}else {
+			return findLevel(t.left, x, level + 1);
+		}
+		
 	}
 	
 	public int numberOfIntermediateNodes() {
@@ -488,8 +521,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int numberOfIntermediateNodes(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva la cantidad de nodos intermedios en el árbol.
-		//...
-		return //...
+		if(t == null) return 0;
+		if(t.left == null && t.right == null) return 0;
+		return 1 + numberOfIntermediateNodes(t.left) + numberOfIntermediateNodes(t.right);
 	}
 
 	public int numberOfNodesWithTwoChildren() {
@@ -498,8 +532,9 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int numberOfNodesWithTwoChildren(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva la cantidad de nodos con exactamente dos hijos en el árbol.
-		//...
-		return //...
+		if(t == null) return 0;
+		if(t.left == null || t.right == null) return 0;
+		return 1 + numberOfNodesWithTwoChildren(t.left) + numberOfNodesWithTwoChildren(t.right);
 	}
 
 	public int numberOfNodesWithOneChild() {
@@ -508,8 +543,10 @@ public class BSTree<T extends Comparable<T>> implements Iterable<T>, BinarySearc
 
 	private int numberOfNodesWithOneChild(BSTNode<T> t) {
 		//TODO: Implementar un método que devuelva la cantidad de nodos con exactamente un hijo en el árbol.
-		//...
-		return //...
+		if(t == null) return 0;
+		if(t.left == null && t.right == null) return 0;
+		if(t.left != null && t.right != null) return numberOfNodesWithOneChild(t.left) + numberOfNodesWithOneChild(t.right);
+		return 1 + numberOfNodesWithOneChild(t.left) + numberOfNodesWithOneChild(t.right);
 	}
 	
 	public void removeMin() {

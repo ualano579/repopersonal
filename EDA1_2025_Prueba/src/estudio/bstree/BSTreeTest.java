@@ -82,6 +82,7 @@ public class BSTreeTest {
 
     @Test
     void testCountNodes() {
+//    	System.out.println(bst.countNodes());
         assertEquals(9, bst.countNodes());
     }
 
@@ -107,6 +108,7 @@ public class BSTreeTest {
 
     @Test
     void testFindMin() {
+//    	System.out.println(bst.findMin());
         assertEquals(1, bst.findMin());
     }
 
