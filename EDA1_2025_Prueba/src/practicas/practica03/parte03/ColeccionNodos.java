@@ -32,7 +32,8 @@ public class ColeccionNodos {
 		//1 for()
 		for (Entry<NodoComponentes, HashSet<NodoComponentes>> par : this.data.entrySet()) {
 			TreeSet<NodoComponentes> aux = result.get(par.getKey());
-			if(aux == null) result.put(par.getKey(), aux = new TreeSet<>(par.getValue()));
+			if(aux == null) result.put(par.getKey(), aux = new TreeSet<>());
+			aux.addAll(par.getValue());
 		}
 		
 		return result;
@@ -87,7 +88,7 @@ public class ColeccionNodos {
 								+ "[comp05]\n"
 									+ "\t[comp01, comp02]\n"
 									+ "\t[comp01, comp03, comp04, comp05]\n";
-		System.out.println(gestion.toString());
+
 		System.out.println(salidaEsperada.equals(gestion.toString()) ? "¡¡¡OK!!!" : "¡¡¡Error!!!");
 	}
 }
